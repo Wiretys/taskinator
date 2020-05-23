@@ -111,7 +111,6 @@ var createTaskActions = function (taskId) {
 var taskButtonHandler = function (event) {
   // get target element from event
   var targetEl = event.target;
-
   // edit button was clicked
   if (targetEl.matches(".edit-btn")) {
     var taskId = targetEl.getAttribute("data-task-id");
@@ -230,7 +229,6 @@ var saveTasks = function () {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-//working on now
 var loadTasks = function () {
   //   Gets task items from localStorage
   localStorage.getItem(saveTasks, tasks);
